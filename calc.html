@@ -9,93 +9,122 @@
 
     <style>
 
-
-        
-        
-
-         input[type="button"] 
+         td 
          { 
-         background-color:azure; 
-         color: black; 
-         border: solid black 2px; 
-         width:100% 
+
+         border-radius: 20px;
+         padding:20px;
+         background-color:red; 
+         color: black;
+/*         border: inset grey 2px; 
+*/         width:100% 
+         font-size:20px;
+         font-weight: bolder;
+         font-family: 
+         
          } 
+
+          td:hover {
+
+         	background-color: purple;
+         }
 
 
          .parent-Div{
 
-         width:auto;
+       /*  width:auto;
          height: auto;
          background-color: yellow;
+*/
+			margin: 10% auto;
+    	    width: 20%;
+    	    box-shadow: -9px -12px 17px 14px #A39E99;
 
 
-         }
+      }
 
-         div{
-
-            
-         width: 200px;
-        height: 600px;
-
-        position:absolute; /*it can be fixed too*/
-        left:0; right:0;
-        top:0; bottom:0;
-        margin:auto;
-
+        
+        tbody,thead
+        {
+			padding: 12px;
+        }
+        .display-text
+        {
+        	height:100px;
+        	background-color: red;
+			border:10px inset grey;
+			margin:0px;
+			padding: 0px;    
+/*			text-decoration-color: blue;
+*/			;
         }
 
+        .extra-display{
+        		padding:12px;
+        		border:4px inset black;
+        		height: 40px;
+        }
+
+        .my-table
+        {
+        	width:100%;
+/*        	background-color: #333;
+*/			background-color: black;
+
+        }
     </style>
-<body>
+<body style="background-color: white">
     <div class="parent-Div">
-        <div>
+        <div class="display-text">
+        	<div class="extra-display">
+        		
+        	</div>
+			
 
-            
-        <table border="1" style="background-color:white"> 
+        	CODED CALCULATOR
+        	
+        </div>
+        <table border="1" class="my-table"> 
         
-        <thead>
-            <tr style="color:tomato">Coded Calculator</tr>
-        </thead>
+	        
 
-
-                <tr> 
-                <td colspan="4"><input type="text" id="result"/></td> 
-                </tr> 
+    
                 <tr> 
                 <!-- create button and assign value to each button -->
                 <!-- dis("1") will call function dis to display value -->
-                <td><input type="button" value="/"> </td> 
-                <td><input type="button" value="-"> </td> 
-                <td><input type="button" value="*"> </td> 
-                <td rowspan="3"><input type="button" value="+" style="width:100%"> </td> 
+                <td>/</td> 
+                <td>-</td> 
+                <td>*</td> 
+                <td rowspan="2">+</td> 
                 </tr> 
                 <tr> 
-                <td><input type="button" value="1"> </td> 
-                <td><input type="button" value="2"> </td> 
-                <td><input type="button" value="3"> </td> 
+                <td>1</td> 
+                <td>2</td> 
+                <td>3</td> 
             <!----       <td><input type="button" value="4"> </td>--> 
                 </tr> 
                 <tr> 
-                <td><input type="button" value="4" > </td> 
-                <td><input type="button" value="5" > </td> 
-                <td><input type="button" value="6" > </td> 
-                <!---   <td><input type="button" value="8" > </td>--> 
+                <td>4</td> 
+                <td>5</td> 
+                <td>6</td> 
+                 <td>Mod-%</td> 
                 </tr> 
                 <tr> 
-                <td><input type="button" value="7" > </td> 
-                <td><input type="button" value="8" > </td> 
-                <td><input type="button" value="9" > </td> 
-                <td><input type="button" value="ENTER" > </td> 
+                <td>7</td> 
+                <td>8</td> 
+                <td>9</td> 
+                <td>ENTER</td> 
                 </tr>
                 <tr> 
-                    <td><input type="button" value="."> </td> 
-                    <td><input type="button" value="0"> </td> 
-                    <td><input type="button" value="c"> </td> 
-                    <td><input type="button" value=""> </td> 
+                    <td>.</td> 
+                    <td>0</td> 
+                    <td>c</td> 
+                    <td>Del</td> 
                 </tr> 
         
             </table>
 
-        </div> 
+         
      </div>       
 </body>
 </html>

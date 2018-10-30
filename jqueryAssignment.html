@@ -11,16 +11,35 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
         </script>
+            
+            <script>
+                $(document).ready(function(){
+                $("p:contains(REPLACE_ME)").css("color","RED");
+
+                   $("div > .special").css("color","blue");
+
+                   $(".heading").css("background-color","yellow");
+
+                   $("li:visible").css("color","purple");
+
+                   $("td").not(":empty").css("background-color","red")
+
+
+
+            });
+            </script>
+
+
     </head>
 
      <style>
      .info-table{
 
-         margin: 10 px solid black;
-         padding: 10 px solid blue;
-         border: 10 px solid red;
          background-color:green;
         width: auto;
+        padding: 10px;
+        margin: 10px;
+
      }
 
         td {
@@ -34,13 +53,13 @@
 
     <body>
         <div>
-            <h1>Request for Replacement</h1> 
+            <h1 class="heading">Request for Replacement</h1> 
 
                 <p>
                     Hi, please understand that John Doe won't be able to get their on time. I would appreciate if you 
-                    could replace me with anyone else available for the task.
+                    could REPLACE_ME with anyone else available for the task.
                 </p>   
-            <h2>Loreum Ipsum</h2>
+            <h2 class="heading">Loreum Ipsum</h2>
 
                 <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nisi nec nulla 
@@ -51,7 +70,7 @@
 
                 <div class="special">
                     <div>
-                    <h3>This is the child inside the parent.</h3>   
+                    <h3 class="heading">This is the child inside the parent.</h3>   
                     </div>
                     <p>
                         We are currently learning bootstrap and jQuery and it's really fun.
@@ -60,9 +79,9 @@
 
                 <div>
                     
-                    <h4>List of technologies</h4>
+                    <h4 class="heading">List of technologies</h4>
                     
-                    <div>
+                    <div class>
                             
                         <ul>
                                 <li>Html</li>
@@ -76,7 +95,7 @@
                     </div>
                     
                     <div class="info-table">
-                        <table class="info-table">
+                        <table class="info-table" >
                             <td>
                                 <td>Ashish</td>
                                 <td></td>

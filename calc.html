@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,139 +6,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Calculator</title>
+
+
+        <link rel = "stylesheet"
+	   type = "text/css"
+	   href = "myStyle.css" />
+	
     </head>
 
-    <style>
 
-         td 
-         { 
-
-         border-radius: 20px;
-         padding:20px;
-         background-color:red; 
-         color: black;
-/*         border: inset grey 2px; 
-*/         width:100% 
-         font-size:20px;
-         font-weight: bolder;
-         font-family: 
-         
-         } 
-
-          td:hover {
-
-         	background-color: purple;
-         }
-
-
-         .parent-Div{
-
-       /*  width:auto;
-         height: auto;
-         background-color: yellow;
-*/
-			margin: 10% auto;
-    	    width: 20%;
-    	    box-shadow: -9px -12px 17px 14px #A39E99;
-
-
-      }
-
-        
-        tbody,thead
-        {
-			padding: 12px;
-        }
-        .display-text
-        {
-        	height:100px;
-        	background-color: red;
-			border:10px inset grey;
-			margin:0px;
-			padding: 0px;    
-/*			text-decoration-color: blue;
-*/			;
-        }
-
-        .main-display{
-        		padding:12px;
-        		border:3px outset black;
-        		height: 40px;
-         		background-color: whitesmoke;
-        }
-
-        .my-table
-        {
-        	width:100%;
-/*        	background-color: #333;
-*/			background-color: darkgrey;
-border:teal;
-
-        }
-
-        .device-name{
-
-/*        	height: 20px
-*/  /*      	font-color: grey;
-    */    	font-weight: bolder;
-        	width: 10px;
-        	height:20px;
-        	padding: 30px 0px 0px 70px;
-    		font-size: x-large;
-        }
-
-    </style>
 <body style="background-color: white">
     <div class="parent-Div">
         <div class="display-text">
-        	<div class="main-display">
+        	<div class="main-display" id="mydisplay" placeholder="You value here">
         		
         	</div>
-			
-        	 <span class="device-name">CALCULATOR</span> 
 
-        </div>
-        <table border="1" class="my-table"> 
+			
+        		 <span class="device-name">CALCULATOR</span> 
+
+	        </div>
+    		    <table border="1" class="my-table"> 
         
 	        
 
     
-                <tr> 
+    	            <tr> 
                 <!-- create button and assign value to each button -->
                 <!-- dis("1") will call function dis to display value -->
-                <td>/</td> 
-                <td>-</td> 
-                <td>*</td> 
-                <td rowspan="2">+</td> 
-                </tr> 
-                <tr> 
-                <td>1</td> 
-                <td>2</td> 
-                <td>3</td> 
+		                <td id="" class="buttons" onclick="getIt('/')">/</td> 
+		                <td id="" class="buttons" onclick="getIt('-')">-</td> 
+		                <td id="" class="buttons" onclick="getIt('*')">*</td> 
+		                <td id="big" class="buttons" onclick="getIt('+')" rowspan="2">+</td> 
+                	</tr> 
+                	<tr> 
+		                <td id="" class="buttons" onclick="getIt(1)">1</td> 
+		                <td id="" class="buttons" onclick="getIt(2)">2</td> 
+		                <td id="" class="buttons" onclick="getIt(3)">3</td> 
             <!----       <td><input type="button" value="4"> </td>--> 
-                </tr> 
-                <tr> 
-                <td>4</td> 
-                <td>5</td> 
-                <td>6</td> 
-                 <td>Mod-%</td> 
-                </tr> 
-                <tr> 
-                <td>7</td> 
-                <td>8</td> 
-                <td>9</td> 
-                <td>ENTER</td> 
-                </tr>
-                <tr> 
-                    <td>.</td> 
-                    <td>0</td> 
-                    <td>c</td> 
-                    <td>Del</td> 
-                </tr> 
+                	</tr> 
+                	<tr> 
+		                <td id="" class="buttons" onclick="getIt(4)">4</td> 
+		                <td id="" class="buttons" onclick="getIt(5)">5</td> 
+		                <td id="" class="buttons" onclick="getIt(6)">6</td> 
+		                 <td id="" class="buttons" onclick="getIt('%')">Mod-%</td> 
+                	</tr> 
+                	<tr> 
+		                <td id="" class="buttons" onclick="getIt(7)">7</td> 
+		                <td id="" class="buttons" onclick="getIt(8)">8</td> 
+		                <td id="" class="buttons" onclick="getIt(9)">9</td> 
+		                <td id="" class="buttons" onclick="getIt()">ENTER</td> 
+                	</tr>
+                	<tr> 
+	                    <td id="" class="buttons" onclick="getIt('.')">.</td> 
+	                    <td id="" class="buttons" onclick="getIt(0)">0</td> 
+	                    <td id="c-button" class="buttons" onclick="clearDisplay()">c</td> 
+	                    <td id="" class="buttons" onclick="getIt()">Del</td> 
+                	</tr> 
         
-            </table>
+            	</table>
 
          
      </div>       
+	<script type="text/javascript" src="index.js" >
+	
+</script>
 </body>
 </html>
